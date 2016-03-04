@@ -50,6 +50,10 @@
       <url>http://oss.jfrog.org/artifactory/simple/oss-snapshot-local/</url>
     </snapshotRepository>
     -->
+    <snapshotRepository>
+      <id>tmp</id>
+      <url>file:///tmp/maven-build-resources</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <build>
