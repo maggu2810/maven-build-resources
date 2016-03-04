@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>de.maggu2810.maven.build</groupId>
+  <artifactId>resources</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>Maven Build Resources</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <licenses>
+    <license>
+      <name>Eclipse Public License</name>
+      <url>http://www.eclipse.org/legal/epl-v10.html</url>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>maggu2810</name>
+    <url>https://github.com/maggu2810/</url>
+  </organization>
+
+  <inceptionYear>2016</inceptionYear>
+
+  <scm>
+    <connection>scm:git:https://github.com/maggu2810/maven-build-resources.git</connection>
+    <developerConnection>scm:git:git@github.com:maggu2810/maven-build-resources.git</developerConnection>
+    <url>https://github.com/maggu2810/maven-build-resources</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <url>https://github.com/maggu2810/maven-build-resources/issues</url>
+    <system>Github</system>
+  </issueManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>bintray</id>
+      <url>https://api.bintray.com/maven/maggu2810/maven/maven-build-resources</url>
+    </repository>
+    <snapshotRepository>
+      <id>bintray</id>
+      <url>http://oss.jfrog.org/artifactory/simple/oss-snapshot-local/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.github.dantwining.whitespace-maven-plugin</groupId>
+          <artifactId>whitespace-maven-plugin</artifactId>
+          <version>1.0.4</version>
+          <executions>
+            <execution>
+              <phase>process-sources</phase>
+              <goals>
+                <goal>trim</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <groupId>com.github.dantwining.whitespace-maven-plugin</groupId>
+        <artifactId>whitespace-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
