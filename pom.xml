@@ -4,7 +4,7 @@
 
   <groupId>de.maggu2810.maven.build</groupId>
   <artifactId>resources</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
 
   <name>Maven Build Resources</name>
 
@@ -31,7 +31,7 @@
     <connection>scm:git:https://github.com/maggu2810/maven-build-resources.git</connection>
     <developerConnection>scm:git:git@github.com:maggu2810/maven-build-resources.git</developerConnection>
     <url>https://github.com/maggu2810/maven-build-resources</url>
-    <tag>resources-1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
