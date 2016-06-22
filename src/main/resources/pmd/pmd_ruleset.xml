@@ -1,5 +1,5 @@
-<ruleset name="Aleon ruleset" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
-  <description>Custom Aleon ruleset</description>
+<ruleset name="maggu2810 ruleset" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+  <description>Custom maggu2810 ruleset</description>
   <rule ref="rulesets/java/basic.xml"/>
   <rule ref="rulesets/java/unnecessary.xml">
     <exclude name="UselessOverridingMethod"/>
