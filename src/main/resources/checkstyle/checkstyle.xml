@@ -18,6 +18,12 @@
   </module>
   <module name="SuppressWarningsFilter" />
   <module name="SuppressionCommentFilter" />
+  <module name="SuppressWithNearbyCommentFilter">
+    <property name="commentFormat" value="CHECKSTYLE - OK to catch (\w+) here" />
+    <property name="checkFormat" value="IllegalCatchCheck" />
+    <property name="messageFormat" value="$1" />
+    <property name="influenceFormat" value="-1" />
+  </module>
   <module name="TreeWalker">
     <module name="SuppressWarningsHolder" />
     <module name="FileContentsHolder" />
@@ -114,7 +120,7 @@
       <message key="ws.notPreceded" value="GenericWhitespace ''{0}'' is not preceded with whitespace." />
     </module>
     <!-- Disable until it works correct with Lambdas -->
-    <!-- <module name="Indentation"> <property name="basicOffset" value="4"/> <property name="braceAdjustment" value="0"/> <property name="caseIndent" value="4"/> 
+    <!-- <module name="Indentation"> <property name="basicOffset" value="4"/> <property name="braceAdjustment" value="0"/> <property name="caseIndent" value="4"/>
       <property name="throwsIndent" value="4"/> <property name="lineWrappingIndentation" value="8"/> <property name="arrayInitIndent" value="8"/> </module> -->
     <module name="AbbreviationAsWordInName">
       <property name="ignoreFinal" value="false" />
